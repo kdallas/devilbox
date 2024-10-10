@@ -1,4 +1,4 @@
-#!/bin/sh -eu
+#!/bin/sh
 #
 # This script will pull all Docker images that are currently
 # bound to your devilbox git state.
@@ -86,5 +86,5 @@ if [ "${WHICH}" = "all" ] || [ "${WHICH}" = "rest" ]; then
 	if [ ! -f "${CWD}/.env" ]; then
 		cp "${CWD}/env-example" "${CWD}/.env"
 	fi
-	docker-compose --project-directory "${CWD}" --file "${CWD}/docker-compose.yml" pull
+	docker compose --project-directory "${CWD}" --file "${CWD}/docker-compose.yml" pull
 fi
