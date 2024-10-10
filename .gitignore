@@ -222,6 +222,7 @@ $RECYCLE.BIN/
 ###### Intellij IDE ######
 .idea/
 .idea_modules/
+*-bak*
 
 ###### vim ######
 *.swp
